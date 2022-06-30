@@ -1,0 +1,15 @@
+<launch>
+
+    <include file="$(find avt_vimba_camera)/launch/mono_camera.launch" />
+
+    <include file="$(find dbw_polaris_can)/launch/dbw.launch" />
+    
+    <node pkg="rqt_reconfigure" type="rqt_reconfigure" name="rqt_console" args="-t" />
+    
+    <node name="lane_blob_detect" pkg="reu_lane_follow_pkg" type="lane_blob_detect.py" 
+    required="true" output="screen" />
+    
+    <node name="reu_controller" pkg="reu_lane_follow_pkg" type="reu_controller.py" 
+    required="true" output="screen" />
+    
+</launch>
