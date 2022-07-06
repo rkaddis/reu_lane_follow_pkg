@@ -30,11 +30,17 @@ def angle_cb(msg):
          
         
 def publish_ctrl():
-    global empty_msg, vel_msg
+    global empty_msg, vel_msg, enable
     rate = rospy.Rate(20)
     while(not rospy.is_shutdown()):
-        empty_pub.publish(empty_msg)
-        vel_pub.publish(vel_msg)
+        if(enable):
+            empty_pub.publish(empty_msg)
+            vel_pub.publish(vel_msg)
+        else:
+            vel_msg.linear.x = 0
+            vel_msg.angular.z = 0
+            empty_pub.publish(empty_msg)
+            vel_pub.publish(vel_msg)
         rate.sleep()
         
         
