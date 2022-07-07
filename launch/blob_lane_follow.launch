@@ -12,4 +12,7 @@
     <node name="reu_controller" pkg="reu_lane_follow_pkg" type="reu_controller.py" 
     required="true" output="screen" />
     
+    <node name="detect_yellow" pkg="reu_lane_follow_pkg" type="detect_yellow.py" 
+    required="true" output="screen" />
+
 </launch>

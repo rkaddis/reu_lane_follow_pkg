@@ -20,6 +20,7 @@ find_package(catkin REQUIRED COMPONENTS
 generate_dynamic_reconfigure_options(
     cfg/REUController.cfg
     cfg/LaneThresh.cfg
+    cfg/DetectYellow.cfg
 )
 
 ## System dependencies are found with CMake's conventions
