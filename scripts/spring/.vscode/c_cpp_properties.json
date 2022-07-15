@@ -1,0 +1,31 @@
+{
+  "configurations": [
+    {
+      "browse": {
+        "databaseFilename": "${default}",
+        "limitSymbolsToIncludedHeaders": false
+      },
+      "includePath": [
+        "/home/actor-nuc2/actor_ws/devel/include/**",
+        "/opt/ros/noetic/include/**",
+        "/home/actor-nuc2/actor_ws/src/actor_line_follow_pkg/include/**",
+        "/home/actor-nuc2/actor_ws/src/avt_vimba_camera/include/**",
+        "/home/actor-nuc2/actor_ws/src/drive_eval_pkg/include/**",
+        "/home/actor-nuc2/actor_ws/src/hello_world_camera_pkg/include/**",
+        "/home/actor-nuc2/actor_ws/src/reu_lane_follow_pkg/include/**",
+        "/home/actor-nuc2/actor_ws/src/rosbag/rosbag_pkg/include/**",
+        "/home/actor-nuc2/actor_ws/src/ethz_piksi_ros/rqt_gps_rtk_plugin/include/**",
+        "/home/actor-nuc2/actor_ws/src/PythonWorkshop/simple_sim/include/**",
+        "/home/actor-nuc2/actor_ws/src/speed_eval_pkg/include/**",
+        "/home/actor-nuc2/actor_ws/src/test_drive_pkg/include/**",
+        "/usr/include/**"
+      ],
+      "name": "ROS",
+      "intelliSenseMode": "gcc-x64",
+      "compilerPath": "/usr/bin/gcc",
+      "cStandard": "gnu11",
+      "cppStandard": "c++14"
+    }
+  ],
+  "version": 4
+}

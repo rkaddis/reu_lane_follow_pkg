@@ -1,0 +1,10 @@
+<launch>
+
+	<include file="$(find avt_vimba_camera)/launch/mono_camera.launch" />
+
+        <node pkg="rqt_reconfigure" type="rqt_reconfigure" name="rqt_console" args="-t" />
+        
+        <node name="detect_yellow" pkg="reu_lane_follow_pkg" type="detect_yellow.py" 
+    required="true" output="screen" />
+    
+</launch>
